@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 10%;
+}
+
+.home {
+    height: 100vh;
+    /* Altura da tela inteira */
+    background-image: url("./img/piscina_fundo.jpg");
+    /* Adicione o caminho da imagem */
+    background-size: cover;
+    /* Faz a imagem ocupar o espaço */
+    background-position: center;
+    /* Centraliza a imagem */
+    display: flex;
+    /* Ativa Flexbox */
+    align-items: center;
+    /* Alinha os elementos verticalmente */
+    justify-content: center;
+    /* Alinha os elementos horizontalmente */
+    
+}
+
+.home h1,
+.home p,
+.home button {
+    z-index: 1;
+    /* Para garantir que os elementos estejam visíveis */
+    color: white;
+    /* Texto visível sobre a imagem */
+}
+
+.home::before {
+    content: '';
+    /* Elemento para adicionar uma sobreposição */
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Sobreposição escura */
+    z-index: 0;
+    /* Coloca atrás do conteúdo */
+}
+
+.container {
+    position: relative;
+    /* Torna os filhos (texto e botão) acima da sobreposição */
+    z-index: 1;
+}
+
+.col-md-4{
+margin-bottom: 4rem !important;
+}
+
+main{
+    background-color: #F8F9FA ;
+}
+
+.img-fotos{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card-text, p {
+    font-weight: 500;
+}
+  
+.image-container {
+    background: url('/assets/img/imagem-piscina.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 300px; /* Ajuste o tamanho mínimo */
+    border-radius: 5px;
+    margin-left: 100px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul li:before {
+    content: "✔";
+    color: blue;
+    margin-right: 10px;
+  }
+  
+  .text-box {
+    background: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra */
+    text-align: left;
+    max-width: 400px; /* Largura máxima do texto */
+    margin-left: 50px;
+  }
+  
