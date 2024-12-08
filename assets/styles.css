@@ -72,41 +72,25 @@ main{
     font-weight: 500;
 }
   
-.image-container {
-    background: url('/assets/img/imagem-piscina.jpg') no-repeat center center;
-    background-size: cover;
+.chat-container {
+    position: relative;
+    width: 80vw;
+    height: 50vh;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  .chat-image {
     width: 100%;
     height: 100%;
-    min-height: 300px; /* Ajuste o tamanho mínimo */
-    border-radius: 5px;
-    margin-left: 100px;
+    object-fit: cover;
   }
-  
-  ul {
-    list-style: none;
-    padding: 0;
+  .chat-list {
+    width: 40%;
+    position: absolute;
+    top: 15%; /* Ajuste conforme necessário */
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+    z-index: 2; /* Garante que fique sobre a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
-  ul li {
-    margin-bottom: 10px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-  }
-  
-  ul li:before {
-    content: "✔";
-    color: blue;
-    margin-right: 10px;
-  }
-  
-  .text-box {
-    background: #ffffff; /* Fundo branco */
-    padding: 20px;
-    border-radius: 10px; /* Borda arredondada */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra */
-    text-align: left;
-    max-width: 400px; /* Largura máxima do texto */
-    margin-left: 50px;
-  }
-  
