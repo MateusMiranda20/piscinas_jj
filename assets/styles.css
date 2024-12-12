@@ -111,11 +111,18 @@ p {
 .card-depoiments {
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 30%;
+    width: 40%;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .card-depoiments{
+        width: 90%;
+    }
 }
 
 .card-depoiments h3 {
