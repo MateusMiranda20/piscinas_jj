@@ -141,3 +141,13 @@ p {
 .main-tree{
     margin-top: 5rem;
 }
+
+.img-sobre{
+    width: 90vh;
+    border-radius: 10px;
+}
+
+.text-direito{
+    position: relative;
+    left: 10rem;
+}
