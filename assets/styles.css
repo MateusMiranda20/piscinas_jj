@@ -1,12 +1,20 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Estilo global */
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .logo {
@@ -14,18 +22,20 @@ img {
     margin-left: 1rem;
 }
 
-span{
+span {
     display: none;
 }
 
-.title{
+.title {
     text-align: center;
 }
+
 /* Geral */
 main {
     background-color: #F8F9FA;
     padding: 1rem;
     height: auto;
+    width: 100%;
 }
 
 .card-text,
@@ -36,6 +46,7 @@ p {
 /* Home */
 .home {
     height: 100vh;
+    width: 100%;
     background-image: url("./img/piscina_fundo.jpg");
     background-size: cover;
     background-position: center;
@@ -43,6 +54,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .home h1,
@@ -76,7 +88,6 @@ p {
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-    max-width: 100%;
 }
 
 .home button:hover {
@@ -110,7 +121,6 @@ p {
     padding: 0 50px;
 }
 
-
 .navbar>.container-fluid {
     display: flex;
     align-items: center;
@@ -129,7 +139,7 @@ p {
 /* Chat */
 .chat-container {
     position: relative;
-    width: 80vw;
+    max-width: 80%;
     height: 50vh;
     margin: 20px auto;
     overflow: hidden;
@@ -198,13 +208,13 @@ p {
 /* Textos à direita */
 .text-direito {
     position: relative;
-    left: 10rem;
+    margin-left: 10rem;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .text-direito {
-        left: 0;
+        margin-left: 0;
         margin-top: 2rem;
         width: 40rem;
         text-align: center;
@@ -215,7 +225,7 @@ p {
     }
 
     .chat-container {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -233,14 +243,13 @@ p {
         font-weight: 600;
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    span{
+    span {
         display: block;
     }
-
 }
 
 @media (max-width: 450px) {
@@ -257,7 +266,7 @@ p {
     }
 
     .text-direito {
-        left: 0;
+        margin-left: 0;
         margin-top: 1rem;
         padding: 0 10px;
         text-align: center;
@@ -274,7 +283,7 @@ p {
     }
 
     .chat-container {
-        width: 100%;
+        max-width: 100%;
         padding: 0 10px;
         height: auto;
     }
@@ -290,4 +299,22 @@ p {
 
 .form-control {
     border: 1px solid black;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
