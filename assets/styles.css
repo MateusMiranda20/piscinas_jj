@@ -5,68 +5,27 @@
 }
 
 img {
-    width: 10%;
+    max-width: 100%;
+    height: auto;
 }
 
-.home {
-    height: 100vh;
-    /* Altura da tela inteira */
-    background-image: url("./img/piscina_fundo.jpg");
-    /* Adicione o caminho da imagem */
-    background-size: cover;
-    /* Faz a imagem ocupar o espaço */
-    background-position: center;
-    /* Centraliza a imagem */
-    display: flex;
-    /* Ativa Flexbox */
-    align-items: center;
-    /* Alinha os elementos verticalmente */
-    justify-content: center;
-    /* Alinha os elementos horizontalmente */
-
+.logo {
+    max-height: 50px;
+    margin-left: 1rem;
 }
 
-.home h1,
-.home p,
-.home button {
-    z-index: 1;
-    /* Para garantir que os elementos estejam visíveis */
-    color: white;
-    /* Texto visível sobre a imagem */
+span{
+    display: none;
 }
 
-.home::before {
-    content: '';
-    /* Elemento para adicionar uma sobreposição */
-    position: absolute;
-    top: 10;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Sobreposição escura */
-    z-index: 0;
-    /* Coloca atrás do conteúdo */
+.title{
+    text-align: center;
 }
-
-.container {
-    position: relative;
-    /* Torna os filhos (texto e botão) acima da sobreposição */
-    z-index: 1;
-    margin-top: 5rem;
-}
-
-.col-md-4 {
-    margin-bottom: 4rem !important;
-}
-
+/* Geral */
 main {
     background-color: #F8F9FA;
-}
-
-.img-fotos {
-    width: 100%;
-    border-radius: 6px;
+    padding: 1rem;
+    height: auto;
 }
 
 .card-text,
@@ -74,12 +33,107 @@ p {
     font-weight: 500;
 }
 
+/* Home */
+.home {
+    height: 100vh;
+    background-image: url("./img/piscina_fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home h1,
+.home button {
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.home p {
+    font-size: 40px;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.home button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 100%;
+}
+
+.home button:hover {
+    background-color: #0056b3;
+}
+
+/* Imagens */
+.img-fotos {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.img-sobre {
+    max-width: 100%;
+    height: 43vh;
+    border-radius: 10px;
+}
+
+/* Ajustes de layout */
+.container {
+    position: relative;
+    z-index: 1;
+    margin-top: 5rem;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.container-sobre {
+    margin-top: 5rem;
+    width: 100%;
+    padding: 0 50px;
+}
+
+
+.navbar>.container-fluid {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    margin-bottom: 4rem !important;
+}
+
+.main-tree {
+    margin-top: 2rem;
+}
+
+/* Chat */
 .chat-container {
     position: relative;
     width: 80vw;
     height: 50vh;
     margin: 20px auto;
     overflow: hidden;
+    padding: 0 10px;
 }
 
 .chat-image {
@@ -92,18 +146,17 @@ p {
     width: 40%;
     position: absolute;
     top: 15%;
-    /* Ajuste conforme necessário */
     background-color: white;
     padding: 10px;
     border-radius: 0 8px 8px 0;
     z-index: 2;
-    /* Garante que fique sobre a imagem */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Depoimentos */
 .container-depoiment {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -111,18 +164,12 @@ p {
 .card-depoiments {
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 40%;
+    width: calc(100% - 20px);
+    max-width: 400px;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 50px;
-}
-
-@media (min-width: 320px) and (max-width: 425px) {
-
-    .card-depoiments{
-        width: 90%;
-    }
 }
 
 .card-depoiments h3 {
@@ -130,6 +177,7 @@ p {
     font-size: 1.2rem;
     color: #007bff;
 }
+
 .card-depoiments p {
     text-align: center;
     font-size: 1rem;
@@ -138,16 +186,108 @@ p {
     font-weight: 400;
 }
 
-.main-tree{
-    margin-top: 5rem;
+.text-depoiments {
+    margin-bottom: 3.5rem !important;
 }
 
-.img-sobre{
-    width: 90vh;
-    border-radius: 10px;
+/* Sobre */
+.sobre {
+    margin-bottom: 5rem !important;
 }
 
-.text-direito{
+/* Textos à direita */
+.text-direito {
     position: relative;
     left: 10rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .text-direito {
+        left: 0;
+        margin-top: 2rem;
+        width: 40rem;
+        text-align: center;
+    }
+
+    .img-sobre {
+        max-width: 370px;
+    }
+
+    .chat-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .chat-list {
+        width: 100%;
+        position: relative;
+        top: 0;
+        border-radius: 8px;
+    }
+
+    .enviar {
+        padding: 10px;
+        margin-top: 20px;
+        width: 150px;
+        font-weight: 600;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    span{
+        display: block;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .home {
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .home h1,
+    .home p,
+    .home button {
+        font-size: 1rem;
+    }
+
+    .text-direito {
+        left: 0;
+        margin-top: 1rem;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .card-depoiments {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .img-sobre {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .chat-container {
+        width: 100%;
+        padding: 0 10px;
+        height: auto;
+    }
+
+    .chat-list {
+        width: 100%;
+        top: 0;
+        position: static;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+}
+
+.form-control {
+    border: 1px solid black;
 }

@@ -18,3 +18,31 @@ const cardsHTML = client.map(cliente => `
 
   // Inserir os cards no HTML
   cardContainer.innerHTML = cardsHTML.join('');
+  
+
+  const form = document.getElementById('my-form');
+  const responseMessage = document.getElementById('responseMessage');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // Impede o redirecionamento padrão
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xannykaa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        responseMessage.style.display = 'block';
+        form.reset(); // Limpa o formulário
+      } else {
+        alert('Ocorreu um erro. Tente novamente.');
+      }
+    } catch (error) {
+      alert('Erro de conexão. Verifique sua internet.');
+    }
+  });
