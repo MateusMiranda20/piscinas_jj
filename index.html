@@ -14,27 +14,31 @@
   <header class="header-menu">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <img class="logo" src="assets/img/Lenovo_Support.ico" alt="Logo">
-        <span>Piscinas JJ</span>
-        <!-- Itens do menu -->
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+        <a class="navbar-brand" href="index.html">
+          <img  class="logo" src="assets/img/Lenovo_Support.ico" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguer">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="hamburguer">
+          <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item ">
+              <a class="nav-link me-3" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Serviços</a>
+              <a class="nav-link me-3" href="#projects">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre</a>
+              <a class="nav-link me-3" href="#about">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacts">Contatos</a>
+              <a class="nav-link me-3" href="#contacts">Contatos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+      
     <section class="home d-flex aling-items-center  justify-content-center" id="home">
       <div class="container">
         <div class="row d-flex aling-items-center text-center">
@@ -129,7 +133,7 @@
       <div class="container-sobre">
         <h2 class="me-3 text-center sobre">Sobre</h2>
         <div class="row">
-          <div class="col-md-4 me-1">
+          <div class="col me-1">
             <img class="img-sobre" src="assets/img/iluminação.jpg" alt="Boias">
           </div>
           <div class="col-md-6 text-direito">
@@ -186,13 +190,12 @@
   <footer>
     <div class="row">
       <div class="section col-md">
-        <a href="https://api.whatsapp.com/send/?phone=5512996676967" target="_blank" className="footer_button">
-          <FaWhatsapp />
-          <p>Whatsapp</p>
+        <a href="https://www.instagram.com/j.j_piscinas/" target="_blank" className="footer_button">
+          <i class="bi bi-instagram icons"></i>
         </a>
         <a href="https://api.whatsapp.com/send/?phone=5512996676967" target="_blank" className="footer_button">
-          <FaWhatsapp />
-          <p>Instagram</p>
+          <i class="bi bi-whatsapp icons"></i>
+          
         </a>
       </div>
     </div>
