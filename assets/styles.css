@@ -203,7 +203,7 @@ p {
 
 /* Sobre */
 .sobre {
-    margin-bottom: 5rem !important;
+    margin-bottom: 2.5rem !important;
 }
 
 /* Textos à direita */
@@ -273,6 +273,7 @@ p {
     .img-sobre {
         max-width: 100%;
         height: auto;
+        margin-bottom: 1.5rem;
     }
 
     .chat-container {
