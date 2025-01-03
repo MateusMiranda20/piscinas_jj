@@ -8,6 +8,7 @@
 html, body {
     width: 100%;
     overflow-x: hidden;
+    background-color: #F8F9FA;
 }
 
 /* Estilo global */
@@ -31,7 +32,6 @@ span {
 
 /* Geral */
 main {
-    background-color: #F8F9FA;
     padding: 1rem;
     height: auto;
     width: 100%;
@@ -303,6 +303,10 @@ p {
     margin: auto;
     align-items: center;
     width: 100%;
+    
+    
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -314,20 +318,38 @@ a {
     text-decoration: none;
 }
 
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 11px;
-    font-size: 1.7rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+
+.redes{
+    text-align: center;
+    margin-top: 35px;
 }
 
-.bi-instagram {
-    color: #D6249F;
+.instagram{
+    height: 50px;
 }
 
-.bi-whatsapp{
-    color: #25D366;
+.whatsapp{
+    height: 55px;
 }
+
+.direitosReservados{
+   margin-top: 2rem;
+   padding: 0.9rem;
+   background-color: #0056b3;
+   color: #fff;
+   font-weight: 100;
+   text-align: center;
+}
+
+body::-webkit-scrollbar{
+    width: 6px;
+  }
+
+  body::-webkit-scrollbar-track{
+    background-color:  #fff ;
+
+  }
+
+  body::-webkit-scrollbar-thumb{
+    background-color:  #0056b3 ;
+  }
