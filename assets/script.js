@@ -1,6 +1,6 @@
 const client = [
     {name: "Joao gomes", text: "Depois de tanto procurar, finalmente achei um atendimento de qualidade!", star: "⭐⭐⭐⭐⭐"},
-    {name: "Mateus Miranda", text: "Recomendo para todos! Muito dedicado e atencioso.", star: "⭐⭐⭐⭐⭐"},
+    {name: "Lara Gonçalves", text: "Recomendo para todos! Muito dedicado e atencioso.", star: "⭐⭐⭐⭐⭐"},
     {name: "Larrisa Oliveira", text: "Superou minhas expectativas, exclente profissional e um atendimento incrivel!", star: "⭐⭐⭐⭐⭐"},
 ];
 
