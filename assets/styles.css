@@ -296,17 +296,14 @@ p {
     border: 1px solid black;
 }
 
-.section {
+.section-footer {
+    background-color: #007bff;
+    margin-top: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
     align-items: center;
-    width: 100%;
-    
-    
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
 }
 
 footer {
@@ -314,32 +311,41 @@ footer {
     background-color: #F8F9FA;
 }
 
+ul > li{
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
 
-
 .redes{
-    text-align: center;
-    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.5rem;
+}
+
+.direitos {
+    background-color: #fff;
+    height: 4rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .instagram{
-    height: 50px;
+    height: 35px;
 }
 
 .whatsapp{
-    height: 55px;
+    height: 35px;
 }
 
-.direitosReservados{
-   margin-top: 2rem;
-   padding: 0.9rem;
-   background-color: #0056b3;
-   color: #fff;
-   font-weight: 100;
-   text-align: center;
-}
+
 
 body::-webkit-scrollbar{
     width: 6px;
