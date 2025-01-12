@@ -209,7 +209,8 @@ p {
 /* Textos à direita */
 .text-direito {
     position: relative;
-    margin-left: 10rem;
+    margin-left: 5rem;
+    line-height: 1.6rem;
 }
 
 /* Responsividade */
@@ -330,8 +331,7 @@ a {
 
 .direitos {
     background-color: #fff;
-    height: 4rem;
-    margin: 0;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,7 +342,7 @@ a {
 }
 
 .whatsapp{
-    height: 35px;
+    height: 40px;
 }
 
 
